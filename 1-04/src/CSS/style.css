@@ -28,17 +28,20 @@ a[href$=".com"]{
     border:1px solid blue ;
 } */
 
-div{
-    color: lightcoral;
-    border:  1px solid grey;
-    margin: 40px;
-    font-weight: bold;
+div {
+  color: lightcoral;
+  border: 1px solid grey;
+  margin: 40px;
+  font-weight: bold;
 }
-div p{
-    border:  inherit;
-    margin: inherit;
-    color:  crimson;
+div p {
+  border: inherit;
+  margin: inherit;
+  color: crimson;
 }
-p{
-    color: orange;
+p {
+  color: orange;
+}
+a:hover {
+  color: red;
 }
