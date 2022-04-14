@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.header{
+    text-align: center;
+    padding: 60px;
+    background-image: url("/Templates/Template5/img/393735.jpg");
+    color: #f1f1f1;
+}
+.header p{
+    margin: 5px;
+}
+.navbar{
+    background:#333;
+    display: flex;
+}
+
+.navbar a{
+    color: #f1f1f1;
+    text-decoration: none;
+    padding: 14px 20px;
+    text-align: center;
+}
+.navbar a:hover{
+    background: #bbb;
+    color: #333;
+}
+.row{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.row .side{
+    background: #ccc;
+    flex: 30%;
+}
+.row .side h2{
+    padding: 30px 20px;
+
+}
+.row .side h3{
+    padding: 30px 20px;
+}
+.row .side p{
+    padding-left: 20px; ;
+}
+.row .img1{
+    padding: 20px;
+    width: 100%;
+    height: 220px;
+}
+.row .image img{
+    padding: 20px;
+    width: 100%;
+    height: 200px;
+}
+.row .main{
+    display: flex;
+    flex-direction: column;
+    background: #f1f1f1;
+    flex: 70%;
+}
+.main .one h2{
+    padding: 30px 20px;
+}
+.main .one p{
+    padding-left: 20px ;
+    padding-bottom: 20px;
+}
+.main .one  img{
+    padding:  0 20px 0 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 400px;
+}
+
+.main .two h2{
+    padding: 30px 20px;
+}
+.main .two p{
+    padding:0 0 20px 20px ;
+}
+.title{
+    padding-bottom:20px ;
+}
+.main .two ul{
+  display: flex;
+  list-style-type: none;
+}
+.main .two ul li{
+    padding-left: 20px;
+    margin-bottom:20px ;
+}
+.main .two ul li img{
+    max-width: 100%;
+    height: 300px;
+    width: 500px;
+}
+.footer{
+    text-align: center;
+    background: #aaa;
+    font-size: 15px;
+    padding: 20px;
+}
+@media screen and (max-width: 700px) {
+    .header{
+        background: #1abc9c;
+    }
+    .navbar, .row{
+        flex-direction: column;
+    }
+    .row .img1{
+        width: 100%;
+        height: 300px;
+    }   
+    .row .image img{
+        height: 300px;
+    }
+    .main .one  img{
+        width: 100%;
+        height: 300px;
+    }
+    .main .two ul li img{
+        max-width: 100%;
+        height: 200px;
+        width: 300px;
+    }
+    .footer{
+        padding: 10px;
+        font-size: 10px;
+    }
+}
