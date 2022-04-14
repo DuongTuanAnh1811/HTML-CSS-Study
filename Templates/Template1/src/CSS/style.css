@@ -1,0 +1,65 @@
+*{
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+body{
+    font-family: Arial;
+    background-color: white;
+}
+.header{
+    background: #f1f1f1;
+    padding: 40px;
+    text-align: center;
+    font-size: 30px;
+}
+.row{
+    display: flex;
+    
+}
+.row .column{
+    padding: 10px;
+    flex: 1 1 0;
+    height: 300px;
+}
+.one{
+    background-color: #aaa;
+}
+.two{
+    background-color: #bbb;
+}
+.three{
+    background-color: #ccc;
+}
+.four{
+    background-color: #ddd;
+}
+.footer{
+    background: #f1f1f1;
+    text-align: center;
+    padding: 30px;
+}
+@media screen and (max-width:600px){
+    .row{
+        /* flex-direction: column;
+        flex-wrap: wrap; */
+        flex-flow: column wrap;
+    }
+    .header{
+        font-size: 25px;
+        color: aquamarine;
+        background: black;
+    }
+    .one{
+        background-color: red;
+    }
+    .two{
+        background-color: blue;
+    }
+    .three{
+        background-color: aqua;
+    }
+    .four{
+        background-color: greenyellow;
+    }
+}
